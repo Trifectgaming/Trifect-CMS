@@ -1,0 +1,65 @@
+Minty Theme
+by NimblePros - www.nimblepros.com
+
+Thanks for downloading Minty. Please rate our theme and leave us feedback at http://orchardproject.net/gallery/
+
+**********************************************************
+Supported widgets
+**********************************************************
+
+This theme contains styles for the following widget placed in specific zones:
+
+Follow Me Widget (FollowMe v 1.0) - Before Header
+Twitter Widget (LatestTwitter v 0.7) - Sidebar
+Search Form - Sidebar
+Tag Cloud (Vandelay Tag Cloud v 1.0) - Sidebar
+Blog Archives - Sidebar
+
+**********************************************************
+Enable the homepage slideshow
+**********************************************************
+
+1.  Place an HTML Widget into the "HomeSlideshow" Zone on the "TheHomepage" layer with the following content listed below. 
+    Be sure to use the HTML view of the content editor when pasting in code so that scripts and tags are rendered correctly.
+    Leave the title blank. 
+
+<script type="text/javascript">// <![CDATA[
+  $(document).ready(function(){  
+    $("#featured").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);  
+    $("#featured").hover(  
+      function() {  
+        $("#featured").tabs("rotate",0,true);  
+      },  
+      function() {  
+        $("#featured").tabs("rotate",5000,true);  
+      }  
+    );  
+  });
+// ]]></script>
+<div id="featured">
+	<ul class="ui-tabs-nav">
+		<li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1">
+			<h2><a href="#fragment-1">Slide Title 1</a></h2>
+			<a href="#fragment-1"><span>Lorem ipsum est tempor sit amet ante donec eu libero sit amer quam egestas semper.</span></a>
+		</li>
+		<li class="ui-tabs-nav-item" id="nav-fragment-2">
+			<h2><a href="#fragment-2">Slide Title 2</a></h2>
+			<a href="#fragment-2"><span>Lorem ipsum est tempor sit amet ante donec eu libero sit amer quam egestas semper.</span></a>
+		</li>
+		<li class="ui-tabs-nav-item" id="nav-fragment-3">
+			<h2><a href="#fragment-3">Slide Title 3</a></h2>
+			<a href="#fragment-3"><span>Lorem ipsum est tempor sit amet ante donec eu libero sit amer quam egestas semper.</span></a>
+		</li>
+	</ul>
+	<!-- First Content -->
+	<div id="fragment-1" class="ui-tabs-panel"><img src="http://lorempixum.com/600/401" /></div>
+
+	<!-- Second Content -->
+	<div id="fragment-2" class="ui-tabs-panel ui-tabs-hide"><img src="http://lorempixum.com/600/400" /></div>
+
+	<!-- Third Content -->
+	<div id="fragment-3" class="ui-tabs-panel ui-tabs-hide"><img src="http://lorempixum.com/600/402" /></div>
+</div>
+
+2.  Replace LoremPixum.com images with your own.
+3.  Publish!

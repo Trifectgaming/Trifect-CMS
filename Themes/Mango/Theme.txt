@@ -1,0 +1,7 @@
+Name: Mango
+Author: Marco Siniscalco
+Website: http://marcosiniscalco.wordpress.com
+Description: Mango is a simple theme inspired Microsoft Windows Phone OS. (Download a sample use on http://mangotheme.codeplex.com)
+Version: 1.1.2
+# todo: provide tags
+# Tags: Classic, Serif

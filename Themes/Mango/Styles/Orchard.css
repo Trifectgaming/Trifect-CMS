@@ -1,0 +1,114 @@
+﻿/*******************************************
+    Adventure:  Fonts CSS
+    Copyrights: MarcoSiniscalco.com
+    Made by:    Marco Siniscalco
+    Date:       November - 2011
+*******************************************/
+
+/* Zones */
+.zone {   
+    /*  Enable this to see zone visualizations
+    background-color: yellow;
+    box-shadow:inset 0 0 1px purple;
+    -moz-box-shadow:inset 0 0 1px purple;
+    -webkit-box-shadow:inset 0 0 1px purple;
+    */
+} 
+.zone-header { padding:0; position: relative; }
+.zone-navigation { padding: 0; }
+.zone-featured {}
+.zone-beforemain {}
+.zone-asidefirst {}
+.zone-messages {}
+.zone-beforecontent {}
+.zone-content {}
+.zone-aftercontent {}
+.zone-asidesecond {}
+.zone-aftermain {}
+.zone-zone-tripelfirst {}
+.zone-zone-tripelsecond {}
+.zone-zone-tripelthird {}
+.zone-footerquadfirst {}
+.zone-footerquadsecond {}
+.zone-footerquadthird {}
+.zone-footerquadfourth {}
+.zone-footer {}
+
+/* Main
+***************************************************************/
+
+/* Content lists and details */
+.content-description { font-size: 1.154em; }
+.content-items { padding: 0; margin: 0; list-style: none; }
+.content-items li { padding: 0; margin: 0; }
+.content-items .content-item { background-color: #0f0f0f; margin-bottom: 20px; padding: 0 10px 0 10px; border: 1px solid #353535; }
+.content-items .content-item header {}
+.content-items .content-item header h1 { margin-bottom:0; }
+.content-items .content-item header h1 a {}
+.content-items .content-item header h1 a:hover {}
+.content-item {}
+
+/* Tags */
+.tags { margin-top: 12px; font-size: 0.83em; }
+.tags a { background-color: #18a2e7; padding: 3px 6px; color: #fff; }
+.tags a:hover { background-color: #6bb608; color: #fff; text-decoration:none; }
+
+/* Metadata */
+.metadata { margin: 0 0 12px 0; color: #ccc; font-size: 0.846em; }
+.metadata .published { display: inline; margin: 0 6px 0 0; }
+.metadata .commentcount { display: inline; }
+.meta {}
+
+/* Comments */
+#comments { margin: 24px 0 0 0; padding: 0; }
+.comment-form { margin: 24px 0 0 0; padding: 20px; }
+.comments { margin: 0; padding: 0; list-style: none; }
+.comments li { background-color: #0f0f0f; margin: 12px 0 0 0; padding: 12px; border: 1px solid #353535; }
+.comment { margin: 0; padding: 0; }
+.comment h4 { font-size: 1.077em; }
+.comment .who {}
+.comment .what {}
+.comment #add-comment {}
+.comment-form #comment-by { font-size: 1.231em; font-weight: normal; margin: 0 0 1.2em 0; border:none; }
+.comment-form #comment-text { width: 33.2em; }
+.comment-form input[type="text"] { width: 32em; }
+.comment-disabled {}
+.comment-count { font-size: 1.231em; }
+
+/* Confirmations */
+.message, .validation-summary-errors { margin:10px 0 4px 0; padding:4px; }
+.messages a { font-weight:bold; }
+.message-Information { background:#e6f1c9; /* green */ border:1px solid #cfe493; color:#fff; }
+.message-Warning { background:#fdf5bc; /* yellow */ border:1px solid #ffea9b; }
+.critical.message, .validation-summary-errors, .message-Error { background:#e68585; /* red */ border:1px solid #990808; color:#fff; }
+
+/* Widgets
+***************************************************************/
+.widgets {}
+.widget h1 {}
+
+#aside-first {}
+#aside-first h1 {background:#1977b0; padding:5px; font-size:1.154em;}
+
+/* Edit Mode Widgets */
+/* These are the edit controls that appear when you're logged-in */
+.widget-control { position: relative; border: 1px dotted #5f97af; }
+.widget-control h1 {}
+.widget-control .manage-actions { position:absolute; top: 0px; right: 0px; }
+.widget-control .manage-actions a { display: block; background-color: #dbdbdb; color: #434343; padding: 3px 6px;  }
+.widget-control .manage-actions a:hover { background-color: #434343; color: #fff; text-decoration: none; }
+
+/* Content Mode */
+.content-control { border: 1px dotted #5f97af; overflow:auto; position: relative; }
+.content-control .manage-actions { position:absolute; top: 0px; right: 0px; }
+.content-control .manage-actions a { display: block; background-color: #dbdbdb; color: #fff; padding: 3px 6px;  }
+.content-control .manage-actions a:hover { background-color: #434343; color: #fff; text-decoration: none; }
+
+/* Pager
+***************************************************************/
+.pager { list-style: none; padding: 0; margin: 12px 0 0 0; }
+.pager li { float: left; padding: 0 12px 0 0; margin: 0; }
+.pager a { font-size: 1.077em; display: block; background-color: #18a2e7; padding:3px 10px 3px 10px; color: #fff;}
+.pager a:hover { background-color: #6bb608; color: #fff; }
+
+

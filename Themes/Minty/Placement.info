@@ -1,0 +1,7 @@
+﻿<Placement>
+  <!-- Customize where the shapes are rendered -->
+  <Place Parts_Tags_ShowTags="Footer:31" />
+  <Match ContentType="Page">
+    <Place Parts_Common_Metadata="-"/>
+  </Match>
+</Placement>

@@ -1,0 +1,13 @@
+Name: Facebook.Like
+AntiForgery: enabled
+Author: The Orchard Team
+Website: http://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.0
+Description: This a module for using Facebook Like and Recommend ajax controls
+Features:
+    Facebook.Like:
+		Name: Facebook Like
+        Description: This feature Facebook Like and Recommend ajax controls.
+		Category: Widget
+		Dependencies: Orchard.Widgets

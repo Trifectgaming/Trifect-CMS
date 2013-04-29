@@ -1,0 +1,13 @@
+﻿/*******************************************
+    Adventure:  Fonts CSS
+    Copyrights: MarcoSiniscalco.com
+    Made by:    Marco Siniscalco
+    Date:       November - 2011
+*******************************************/
+
+@font-face {
+    font-family: "Segoe WPC";
+    src: url("../Content/Fonts/Segoe-WPC.eot");
+    font-style: normal;
+    font-weight: normal;
+}

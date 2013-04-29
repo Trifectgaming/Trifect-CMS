@@ -1,0 +1,7 @@
+﻿Name: Minty
+Author: NimblePros
+Description: Minty is an upbeat, airy theme, perfect for any personal or professional website. Based on the Orchard Theme Machine, Minty is flexible and includes styles for a feature slideshow, blog, and several Orchard Gallery widgets (see included Instructions.txt for more information). 
+Version: 1.0.1
+Tags: Awesome, Green, one-column, two-column, airy, light, blog, slideshow
+Website: http://nimblepros.com
+Zones: BeforeHeader, Header, Navigation, HomeSlideshow, Featured, BeforeMain, Messages, BeforeContent, Content, AfterContent, Sidebar, AfterMain, TripelFirst, TripelSecond, TripelThird, FooterQuadFirst, FooterQuadSecond, FooterQuadThird, FooterQuadFourth, Footer

@@ -1,0 +1,100 @@
+2013-03-27 18:58:37,798 [24] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - TargetInvocationException thrown from IContentPartDriver by Orchard.Core.Containers.Drivers.ContainerWidgetPartDriver
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method(Closure )
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Evaluate(Expression e)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitBinary(BinaryExpression b)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitLambda(LambdaExpression lambda)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitUnary(UnaryExpression u)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitList(ReadOnlyCollection`1 original)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.PartialEval(Expression expression, Func`2 fnCanBeEvaluated)
+   at NHibernate.Linq.Visitors.Evaluator.PartialEval(Expression expression)
+   at NHibernate.Linq.NHibernateQueryProvider.TranslateExpression(Expression expression)
+   at Orchard.ContentManagement.DefaultContentQuery.Where[TRecord](Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 89
+   at Orchard.ContentManagement.DefaultContentQuery.ContentQuery`2.Orchard.ContentManagement.IContentQuery<T,TR>.Where(Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 237
+   at Orchard.Core.Containers.Drivers.ContainerWidgetPartDriver.<>c__DisplayClass6.<Display>b__4() in c:\Users\sebros\My Projects\Orchard\src\Orchard.Web\Core\Containers\Drivers\ContainerWidgetPartDriver.cs:line 32
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassf.<ContentShape>b__e(BuildShapeContext ctx) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 130
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass15.<ContentShapeImplementation>b__14(BuildShapeContext ctx) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 139
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 39
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassa.<BuildDisplay>b__9(IContentPartDriver driver) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 49
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\My Projects\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-03-27 18:58:44,318 [53] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - TargetInvocationException thrown from IContentPartDriver by Orchard.Core.Containers.Drivers.ContainerWidgetPartDriver
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method(Closure )
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Evaluate(Expression e)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitBinary(BinaryExpression b)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitLambda(LambdaExpression lambda)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitUnary(UnaryExpression u)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitList(ReadOnlyCollection`1 original)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.PartialEval(Expression expression, Func`2 fnCanBeEvaluated)
+   at NHibernate.Linq.Visitors.Evaluator.PartialEval(Expression expression)
+   at NHibernate.Linq.NHibernateQueryProvider.TranslateExpression(Expression expression)
+   at Orchard.ContentManagement.DefaultContentQuery.Where[TRecord](Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 89
+   at Orchard.ContentManagement.DefaultContentQuery.ContentQuery`2.Orchard.ContentManagement.IContentQuery<T,TR>.Where(Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 237
+   at Orchard.Core.Containers.Drivers.ContainerWidgetPartDriver.<>c__DisplayClass6.<Display>b__4() in c:\Users\sebros\My Projects\Orchard\src\Orchard.Web\Core\Containers\Drivers\ContainerWidgetPartDriver.cs:line 32
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassf.<ContentShape>b__e(BuildShapeContext ctx) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 130
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass15.<ContentShapeImplementation>b__14(BuildShapeContext ctx) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 139
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 39
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassa.<BuildDisplay>b__9(IContentPartDriver driver) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 49
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Users\sebros\My Projects\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-03-27 18:59:36,138 [54] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - TargetInvocationException thrown from IContentPartDriver by Orchard.Core.Containers.Drivers.ContainerWidgetPartDriver
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method(Closure )
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Delegate.DynamicInvokeImpl(Object[] args)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Evaluate(Expression e)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitBinary(BinaryExpression b)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitLambda(LambdaExpression lambda)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitUnary(UnaryExpression u)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitList(ReadOnlyCollection`1 original)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.VisitMethodCall(MethodCallExpression m)
+   at NHibernate.Linq.Visitors.ExpressionVisitor.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.SubtreeEvaluator.Visit(Expression exp)
+   at NHibernate.Linq.Visitors.Evaluator.PartialEval(Expression expression, Func`2 fnCanBeEvaluated)
+   at NHibernate.Linq.Visitors.Evaluator.PartialEval(Expression expression)
+   at NHibernate.Linq.NHibernateQueryProvider.TranslateExpression(Expression expression)
+   at Orchard.ContentManagement.DefaultContentQuery.Where[TRecord](Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 89
+   at Orchard.ContentManagement.DefaultContentQuery.ContentQuery`2.Orchard.ContentManagement.IContentQuery<T,TR>.Where(Expression`1 predicate) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\DefaultContentQuery.cs:line 237
+   at Orchard.Core.Containers.Drivers.ContainerWidgetPartDriver.<>c__DisplayClass6.<Display>b__4() in c:\Users\sebros\My Projects\Orchard\src\Orchard.Web\Core\Containers\Drivers\ContainerWidgetPartDriver.cs:line 32
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassf.<ContentShape>b__e(BuildShapeContext ctx) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 130
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass15.<ContentShapeImplementation>b__14(BuildShapeContext ctx) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 139
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Users\sebros\My Projects\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 39
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext con

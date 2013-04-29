@@ -1,0 +1,100 @@
+﻿@{
+    /* Global includes for the theme
+    ***************************************************************/
+    Style.Include("Fonts.css");
+    Style.Include("Reset.css");
+    Style.Include("General.css");
+    Style.Include("Orchard.css");
+    Style.Include("Site.css");
+    
+    /* Last bit of code to prep the layout wrapper
+    ***************************************************************/
+
+    Model.Id = "layout";
+    var tag = Tag(Model, "div"); // using Tag so the layout div gets the classes, id and other attributes added to the Model
+}
+
+    <div id="signIn">
+        @Display(New.User())
+    </div>
+
+
+@tag.StartElement
+
+    @if (Model.Navigation != null)
+    {
+        <div id="layout-navigation" class="group">        
+            @Display(Model.Navigation)
+        </div>
+    }
+
+    @if (Model.Header != null)
+    {
+        <header id="layout-header" class="group">
+            <div id="header">
+                @Display(Model.Header)
+            </div>
+        </header>
+    }    
+
+    <div id="layout-main" class="group">
+
+        @if (Model.AsideFirst != null)
+        {
+        <aside id="aside-first" class="aside-first group">
+            @Display(Model.AsideFirst)
+        </aside>
+        }
+ 
+        @if (Model.BeforeContent != null) {
+        <div id="before-content">
+            @Display(Model.BeforeContent)
+        </div>
+        }
+        
+        @if (Model.Content != null)
+        {
+        <div id="content" class="group">
+            @Display(Model.Content)
+        </div><!--#content-->
+        } 
+
+        @if (Model.AfterContent != null) {
+        <div id="after-content">
+            @Display(Model.AfterContent)
+        </div>
+        } 
+
+    </div><!--#layout-main-->
+
+@tag.EndElement    
+
+<div id="layout-footer" class="group">
+
+    <div id="layout-tripel" class="group">@* as in beer *@
+        @if (Model.TripelFirst != null) {
+        <div id="tripel-first">
+            @Display(Model.TripelFirst)
+        </div>
+        }
+        @if (Model.TripelSecond != null) {
+        <div id="tripel-second">
+            @Display(Model.TripelSecond)
+        </div>
+        }
+        @if (Model.TripelThird != null) {
+        <div id="tripel-third">
+            @Display(Model.TripelThird)
+        </div>
+        }    
+    </div>
+  
+    <footer id="footer">
+        @if (Model.Footer != null)
+        {
+            @Display(Model.Footer)
+        }     
+    </footer>
+    @Display(New.BadgeOfHonor())
+
+</div>
