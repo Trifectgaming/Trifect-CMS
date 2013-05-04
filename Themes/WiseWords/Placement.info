@@ -1,0 +1,24 @@
+<Placement>
+  <Place Parts_Tags_ShowTags="Content:6"/>
+
+  <Match DisplayType="Summary">
+    <Place Parts_Common_Metadata_Summary="Meta:1"/>
+  </Match>
+
+  <Match DisplayType="Summary">
+    <Place Parts_Comments_Count="-" />
+  </Match>
+
+  <Match ContentType="Page">
+    <Place Parts_Common_Metadata="-" />
+  </Match>
+
+  <Match ContentType ="Blog">
+    <Place Parts_Common_Metadata="-" />
+    <Place Parts_Title="-" />
+  </Match>
+
+  <Match ContentType ="ProjectionPage">
+    <Place Parts_Title="-" />
+  </Match>
+</Placement>

@@ -1,0 +1,6 @@
+Name: Wise Words
+Author: Shovel & Rake / Alexander Rechsteiner
+Website: http://shovelandrake.com
+Description: A simple blogging theme for Orchard, with focus on typography. For feedback or bug reports contact me at feedback@shovelandrake.com or find me in the Orchard IRC channel (#orchard on irc.freenode.net) where I go by the nick arechsteiner. You can also tweet me a message on Twitter: @arechsteiner    // Thanks for using Wise Words.
+Version: 1.0
+Zones: Header, Logo, Navigation, Featured, BeforeMain, AsideFirst, Messages, BeforeContent, Content, AfterContent, AsideSecond, AfterMain, TripelFirst, TripelSecond, TripelThird, FooterQuadFirst, FooterQuadSecond, FooterQuadThird, FooterQuadFourth, Footer, Copyright

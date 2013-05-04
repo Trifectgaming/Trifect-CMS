@@ -1,30 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies>
   <Dependency>
-    <ModuleName>Bootstrap</ModuleName>
-    <VirtualPath>~/Themes/Bootstrap/Bootstrap.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Themes</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>CKEditor</ModuleName>
-    <VirtualPath>~/Modules/CKEditor/CKEditor.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Themes</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
     <ModuleName>Common</ModuleName>
     <VirtualPath>~/Core/Common</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
@@ -39,6 +15,36 @@
   <Dependency>
     <ModuleName>Contents</ModuleName>
     <VirtualPath>~/Core/Contents</VirtualPath>
+    <LoaderName>CoreExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Dashboard</ModuleName>
+    <VirtualPath>~/Core/Dashboard</VirtualPath>
+    <LoaderName>CoreExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Feeds</ModuleName>
+    <VirtualPath>~/Core/Feeds</VirtualPath>
+    <LoaderName>CoreExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Markdown</ModuleName>
+    <VirtualPath>~/Modules/Markdown/bin/Markdown.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>MarkdownSharp</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Markdown/bin/MarkdownSharp.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>Navigation</ModuleName>
+    <VirtualPath>~/Core/Navigation</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
     <References />
   </Dependency>
@@ -72,146 +78,9 @@
     </References>
   </Dependency>
   <Dependency>
-    <ModuleName>Contoso</ModuleName>
-    <VirtualPath>~/Themes/Contoso/Contoso.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Autoroute</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Autoroute/bin/Orchard.Autoroute.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Contrib.GoogleAnalytics</ModuleName>
-    <VirtualPath>~/Modules/Contrib.GoogleAnalytics/Contrib.GoogleAnalytics.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>CyberStride.Contacts</ModuleName>
-    <VirtualPath>~/Modules/CyberStride.Contacts/CyberStride.Contacts.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Dashboard</ModuleName>
-    <VirtualPath>~/Core/Dashboard</VirtualPath>
-    <LoaderName>CoreExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Facebook.Like</ModuleName>
-    <VirtualPath>~/Modules/Facebook.Like/Facebook.Like.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>FeaturedItemSlider</ModuleName>
-    <VirtualPath>~/Modules/FeaturedItemSlider/FeaturedItemSlider.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Feeds</ModuleName>
-    <VirtualPath>~/Core/Feeds</VirtualPath>
-    <LoaderName>CoreExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>LatestTwitter</ModuleName>
-    <VirtualPath>~/Modules/LatestTwitter/LatestTwitter.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Lucene</ModuleName>
-    <VirtualPath>~/Modules/Lucene/Lucene.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Lucene.Net</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Lucene/bin/Lucene.Net.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Mango</ModuleName>
-    <VirtualPath>~/Themes/Mango/Mango.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Markdown</ModuleName>
-    <VirtualPath>~/Modules/Markdown/bin/Markdown.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>MarkdownSharp</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Markdown/bin/MarkdownSharp.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Media</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Media/bin/Orchard.Media.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Ionic.Zip</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Fields/bin/Ionic.Zip.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Mello.ImageGallery</ModuleName>
-    <VirtualPath>~/Modules/Mello.ImageGallery/Mello.ImageGallery.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>ICSharpCode.SharpZipLib</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Mello.ImageGallery/lib/ICSharpCode.SharpZipLib.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Orchard.Media</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Media/bin/Orchard.Media.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Minty</ModuleName>
-    <VirtualPath>~/Theme/Minty</VirtualPath>
-    <LoaderName>RawThemeExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Navigation</ModuleName>
-    <VirtualPath>~/Core/Navigation</VirtualPath>
-    <LoaderName>CoreExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>oforms</ModuleName>
-    <VirtualPath>~/Modules/oforms/oforms.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
     <ModuleName>Orchard.Blogs</ModuleName>
     <VirtualPath>~/Modules/Orchard.Blogs/bin/Orchard.Blogs.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.CodeGeneration</ModuleName>
-    <VirtualPath>~/Modules/Orchard.CodeGeneration/Orchard.CodeGeneration.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
     <References />
   </Dependency>
   <Dependency>
@@ -233,6 +102,12 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>Orchard.Themes</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>Orchard.ContentTypes</ModuleName>
     <VirtualPath>~/Modules/Orchard.ContentTypes/bin/Orchard.ContentTypes.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -245,45 +120,16 @@
     </References>
   </Dependency>
   <Dependency>
-    <ModuleName>Orchard.Scripting</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Widgets</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
+    <ModuleName>Orchard.Media</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Media/bin/Orchard.Media.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
-        <Name>Orchard.Scripting</Name>
+        <Name>Ionic.Zip</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Orchard.Themes</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
+        <VirtualPath>~/Modules/Orchard.Fields/bin/Ionic.Zip.dll</VirtualPath>
       </Reference>
     </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.DesignerTools</ModuleName>
-    <VirtualPath>~/Modules/Orchard.DesignerTools/Orchard.DesignerTools.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Widgets</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Email</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Email/Orchard.Email.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
   </Dependency>
   <Dependency>
     <ModuleName>Orchard.Fields</ModuleName>
@@ -309,12 +155,6 @@
     <References />
   </Dependency>
   <Dependency>
-    <ModuleName>Orchard.Indexing</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Indexing/Orchard.Indexing.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
     <ModuleName>Orchard.jQuery</ModuleName>
     <VirtualPath>~/Modules/Orchard.jQuery/bin/Orchard.jQuery.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -336,12 +176,6 @@
         <VirtualPath>~/Modules/Orchard.Media/bin/Orchard.Media.dll</VirtualPath>
       </Reference>
     </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Messaging</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Messaging/Orchard.Messaging.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
   </Dependency>
   <Dependency>
     <ModuleName>Orchard.Modules</ModuleName>
@@ -419,6 +253,12 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>Orchard.Scripting</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>Orchard.Rules</ModuleName>
     <VirtualPath>~/Modules/Orchard.Rules/bin/Orchard.Rules.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -439,12 +279,6 @@
         <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
       </Reference>
     </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Search</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Search/Orchard.Search.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
   </Dependency>
   <Dependency>
     <ModuleName>Orchard.Setup</ModuleName>
@@ -492,6 +326,23 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>Orchard.Widgets</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Scripting</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Themes</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
     <ModuleName>Reports</ModuleName>
     <VirtualPath>~/Core/Reports</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
@@ -522,12 +373,6 @@
     <References />
   </Dependency>
   <Dependency>
-    <ModuleName>SH.GoogleAnalytics</ModuleName>
-    <VirtualPath>~/Modules/SH.GoogleAnalytics/SH.GoogleAnalytics.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
     <ModuleName>Shapes</ModuleName>
     <VirtualPath>~/Core/Shapes</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
@@ -546,45 +391,10 @@
     </References>
   </Dependency>
   <Dependency>
-    <ModuleName>Szmyd.Orchard.Modules.Menu</ModuleName>
-    <VirtualPath>~/Modules/Szmyd.Orchard.Modules.Menu/Szmyd.Orchard.Modules.Menu.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Autoroute</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Autoroute/bin/Orchard.Autoroute.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Orchard.Widgets</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Terra</ModuleName>
-    <VirtualPath>~/Themes/Terra/Terra.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
     <ModuleName>TheAdmin</ModuleName>
     <VirtualPath>~/Theme/TheAdmin</VirtualPath>
     <LoaderName>RawThemeExtensionLoader</LoaderName>
     <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>TheMetroTheme</ModuleName>
-    <VirtualPath>~/Themes/TheMetroTheme/TheMetroTheme.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Themes</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
-      </Reference>
-    </References>
   </Dependency>
   <Dependency>
     <ModuleName>TheThemeMachine</ModuleName>
@@ -640,6 +450,12 @@
         <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
       </Reference>
     </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>WiseWords</ModuleName>
+    <VirtualPath>~/Theme/WiseWords</VirtualPath>
+    <LoaderName>RawThemeExtensionLoader</LoaderName>
+    <References />
   </Dependency>
   <Dependency>
     <ModuleName>XmlRpc</ModuleName>

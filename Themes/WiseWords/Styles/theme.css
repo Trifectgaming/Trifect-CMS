@@ -1,0 +1,786 @@
+﻿/* 
+    ################################
+    # Wise Words Theme - Theme.css #
+    ################################
+
+    Table of contents
+    *****************
+    1. Content
+    2. Layout
+    3. Navigation
+        - 3.a Standard navigation
+        - 3.b Tinynav.js
+    4. Forms
+    5. Misc
+    6. Orchard specific
+        - 6.a General
+        - 6.b Blog
+        - 6.c Projections
+        - 6.d Search
+        - 6.e Tags
+        - 6.f Login
+        - 6.g Comments
+               - 6.g.i  Display
+               - 6.g.ii Form
+        - 6.h Zones
+        - 6.i Forms
+*/
+
+
+
+
+
+/***** 1. Content *****/
+
+a {
+    color: #9b7188;
+    text-decoration: underline;
+}
+
+a:hover, a:focus {
+    color: inherit;
+    text-decoration: underline;
+}
+
+body{
+	background-color:#eeeee6;
+	font-family: 'PT Serif', serif;
+	font-size:18px;
+	line-height: 30px;
+}
+
+body, legend {
+    color:#494e55;
+}
+
+h1 {
+	color:#9b7188;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 34px;
+	font-weight: 300;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h1 a, h1 a:hover, h1 a:focus {
+    text-decoration:none;
+}
+
+h4 {
+    margin-top:20px;
+}
+
+hr {
+	margin-top:12px;
+	border-top:none;
+	border-bottom:1px solid #b2b8c1;
+}
+
+li {
+    line-height: 30px;
+}
+
+ol, ul {
+    margin-bottom:30px;
+}
+
+p {
+    margin-bottom:30px;
+}
+
+
+
+
+
+
+/***** 2. Layout *****/
+
+body {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.main-content-row {
+	margin-top:90px;
+    margin-bottom:70px;
+}
+
+
+
+
+
+
+/***** 3. Navigation *****/
+
+
+/***** 3.a Standard navigation *****/
+
+.dropdown-menu {
+  background-color: #e2e3c8;
+  border: none;
+  display: none;
+  float: left;
+  left: 0;
+  list-style: none;
+  margin: 16px 0 0;
+  min-width: 160px;
+  padding: 5px 0;
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+}
+
+.dropdown-menu > li
+{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.dropdown-menu > li > a
+{
+    font-size: 19px;
+	text-align: center;
+    text-transform: none;	
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a,
+.dropdown-menu > .active > a:hover {
+    background-color: #d8d9bf;
+    background-image: none;
+    color: black;
+    filter: none;
+    text-decoration: none;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus {
+    color: inherit;
+    background-color: inherit;
+    background-image: inherit;
+    background-repeat: inherit;
+    filter: inherit;
+    outline: inherit;
+    text-decoration: none;
+}
+
+.nav {
+    margin-bottom: 0px;
+}
+
+.nav > li > a:hover, 
+.nav > li > a:focus{
+	background-color:inherit;
+}
+
+.nav > li.dropdown.open.active > a:hover,
+.nav > li.dropdown.open.active > a:focus {
+    background-color: inherit;
+    border-color: inherit;
+    color: inherit;
+}
+
+.ww-nav {
+	padding-top:6px;
+}
+
+.ww-nav a {
+	color:#494e55;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 25px;
+	font-weight:300;
+	line-height: 14px;
+	margin-left: 0px;
+	margin-right: 2px;
+	padding-right: 0px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.ww-nav a:hover {
+	color:#9b7188;
+}
+
+.ww-nav > li {
+	float:left;
+	margin-left:15px;
+}
+
+.ww-nav > li > a {
+    padding:25px;
+}
+
+.ww-nav > li.last a {
+    padding-right:0px;
+}
+
+.zone-navigation {
+    display: inline;
+}
+
+
+
+
+
+
+
+
+/***** 3.b Tinynav.js *****/
+
+/* Desktop */
+.tinynav { 
+    background-color:#f6f6ed; 
+    display: none; 
+    height:40px; 
+    margin-top:25px;
+    width:100%; 
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .tinynav { display: inline; }
+
+}   
+
+
+
+
+
+
+/***** 4. Forms *****/
+
+button
+{
+	background-color: #9b7188;
+	border:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#eeeee6;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+    height:55px;
+    margin-top:15px;
+    padding-left:30px;
+    padding-right:30px;
+    
+	text-transform: uppercase;
+    
+}
+
+button:hover
+{
+	background-color: #83536d;
+}
+
+input.text, input[type=text], input[type=password] {
+	height:35px;
+	width:100%;
+}
+
+label {
+	font-size:18px;
+	margin-bottom:20px;
+	margin-top:35px;
+	text-align: left;
+}
+
+legend {
+	border-bottom: none;
+}
+
+textarea {
+	width:100%;
+}
+
+fieldset {
+    text-align:center;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  background-color: #f6f6ed;
+  border: 1px solid #b2b8c1;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(191, 167, 177, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(155, 113, 136, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(155, 113, 136, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(155, 113, 136, 0.6);
+}
+
+
+
+
+
+
+/***** 5. Misc *****/
+
+[class^="icon-"],
+[class*=" icon-"] {
+    background-image: url("../Content/img/glyphicons-halflings.png");
+}
+
+.seperator {
+	background-image:url('../Content/img/threedots.png'); 
+	height:6px;
+    margin:100px auto; /*top  bottom left right*/
+	width:35px;
+}
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+    background-color: #f6f6ed;
+}
+
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+    background-color: #e2dbd8;
+}
+
+
+
+
+
+
+
+
+
+/***** 6. Orchard specific *****/
+
+
+
+
+/***** 6.a General *****/
+
+.notfound-title {
+    font-size:75px;
+}
+
+.notfound-message {
+ text-align:center;   
+}
+
+ul.content-items, article.projection-page ul {
+    list-style:none;
+    margin:0;
+}
+
+ul.content-items li, article.projection-page ul:first-child li {
+    background-image:url('../Content/img/threedots.png'); 
+    background-position:bottom center;
+    background-repeat:no-repeat;
+    margin-bottom:60px;
+    padding-bottom:60px;
+}
+
+ul.content-items li.last, article.projection-page ul:first-child li.last {
+    background-image:none;
+    padding-bottom:0px;
+}
+
+.copyright {
+	font-size:12px;
+	text-align: left;
+}
+
+h1.page-title {
+    font-size:20px;
+    font-family:'Open Sans Condensed';
+    text-transform:none;
+}
+
+.poweredBy {
+    text-align:right;
+}
+
+article.projection-page ul.pager {
+    margin: 20px 0;
+}
+
+
+.zone-content h1 {
+    margin-bottom:50px;
+}
+
+
+/*.widget .search-form button,
+.comment-form button.primaryAction,
+.login-form button.primaryAction
+{
+	background-color: #9b7188;
+	border:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#eeeee6;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+    height:45px;
+    margin-top:15px;
+    padding-left:15px;
+    padding-right:15px;
+	text-transform: uppercase;
+}
+
+.comment-form button:hover,
+.widget .search-form button:hover,
+.login-form button:hover
+{
+	background-color: #83536d;
+}*/
+
+
+
+
+
+
+
+/***** 6.b Blog *****/
+
+.archives ul {
+    list-style: none;
+    text-align: center;
+}
+    
+.blog-post {
+    line-height:30px;
+}
+
+.published {
+	font-size:16px; 
+	text-align: center;
+}
+
+
+/***** 6.c Projections *****/
+
+
+
+
+
+
+/***** 6.d Search *****/
+
+.widget .search-form
+{
+	text-align: center;
+}
+
+.widget .search-form input#q 
+{
+	height:35px;
+	margin-bottom:0px;
+	width:155px;
+}
+
+.widget-search-form {
+    float:none !important;
+ }
+
+.widget .search-form button
+{
+	height:45px;
+    margin-top:0px;
+    padding:0px;
+	width: 45px;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { .widget .search-form input#q {width:205px;} }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { .widget .search-form input#q {width:101px;}  }
+
+
+.search-summary {
+    float: none !important;
+    text-align: center !important;
+}
+
+
+/***** 6.e Tags *****/
+
+ul.tagcloud {
+	list-style: none;
+	overflow:auto; /*for clearing the float */
+}
+
+ul.tagcloud li {
+	float:left;
+	height:36px;
+	margin-right:5px;
+}
+
+ul.tagcloud a {
+	color:inherit;
+	text-decoration: none;
+}
+
+ul.tagcloud a:hover {
+	color:#9b7188
+}
+
+li.tagCloud-1{font-size:12px;}
+li.tagCloud-2{font-size:18px;}
+li.tagCloud-3{font-size:24px;}
+li.tagCloud-4{font-size:30px;}
+li.tagCloud-5{font-size:36px;}
+
+p.tags{
+    margin-bottom:0px;
+}
+
+
+
+
+
+
+/***** 6.f Login *****/
+
+.login-form input#remember-me {
+    margin-bottom: 5px;
+}
+
+fieldset.login-form {
+    margin-top:40px;
+    margin-bottom:40px;
+    text-align: center;
+}
+
+.login-form ol {
+    list-style:none;
+    margin-left:0;
+}
+
+
+
+
+
+
+
+/***** 6.g Comments *****/
+
+/***** 6.g.i Display *****/
+
+.comment a 
+{
+	color:inherit;
+	text-decoration: none;
+}
+
+article.comment h4 {
+	font-weight: normal;
+	margin-bottom:15px;
+
+}
+
+#comments {
+    background-image: url('../Content/img/threedots.png');
+    background-position:center top;
+    background-repeat:no-repeat;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+#comments article {
+	margin-top:100px;
+}
+
+#comments .text
+{
+	font-size: 16px;
+	line-height: 30px;
+	text-align: left;
+}
+
+#comments .when
+{
+	font-size: 14px;
+}
+
+.comments {
+	text-align: center;
+}
+
+
+ul.comments {
+	list-style: none;
+	margin-left:0;
+}
+
+
+
+
+
+
+
+/***** 6.g.ii Form *****/
+
+.comment-form {
+	margin-top:125px;
+	margin-bottom: 125px;
+}
+
+.comment-form button.primaryAction {
+    height:55px;
+    margin-top:50px;
+    margin-left: 10px;
+    width:300px;
+ }
+
+@media (max-width: 767px) { 
+	.comment-form button.primaryAction
+	{
+		width:200px;
+	}
+ }
+
+
+/*.comment-form input.text {
+	height:35px;
+	width:100%;
+}
+
+.comment-form label {
+	font-size:18px;
+	margin-bottom:20px;
+	margin-top:35px;
+	text-align: left;
+}
+
+.comment-form legend {
+	border-bottom: none;
+}*/
+
+.comment-form legend#add-comment, h2.comment-count {
+	color:#9b7188;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+	margin-bottom: 30px;
+	text-align: center;
+	text-transform: uppercase;	
+}
+
+.comment-form ol {
+	margin:0;
+}
+
+.comment-form ol li {
+	list-style: none;
+}
+
+/*.comment-form textarea#comment-text {
+	width:100%;
+}*/
+
+fieldset.what {
+	text-align: center;
+}
+
+
+
+
+
+
+/***** 6.h Zones *****/
+
+#aside-second article.widget {
+	border-top:1px solid #b2b8c1;
+	margin-bottom:50px;
+	padding-top:30px;
+}
+
+#aside-second article.widget:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+#aside-second article.widget header h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	font-weight:300;
+}
+
+.tripel article.widget header h1,
+.quad article.widget header h1 {
+	font-family: 'Open Sans Condensed', sans-serif;	
+	font-size: 24px;
+	margin-bottom:13px;
+	text-transform: none;
+}
+
+.tripel article.widget,
+.quad article.widget {
+	font-size:16px;
+	margin-top:0;
+	text-align: center;
+}
+
+.tripel-row {
+	margin-bottom:30px;
+}
+
+
+div.zone-logo {
+    display:inline-block;
+}
+
+
+
+
+
+/***** 6.i Forms *****/
+
+
+input[type=checkbox] {
+    float:left;
+}
+
+label.forcheckbox {
+    margin-left:25px;
+}

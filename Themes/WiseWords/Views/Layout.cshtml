@@ -1,0 +1,211 @@
+﻿@{ 
+    Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
+    
+    SetMeta("viewport", "width=device-width, initial-scale=1.0");
+
+    //Offsets depend on zone config
+    string contentOffset = "offset1";
+    string asideOffset = "offset1";
+
+    if (Model.AsideFirst != null && Model.AsideSecond != null) {
+        contentOffset = "";
+        asideOffset = "";
+    } else if (Model.AsideFirst == null && Model.AsideSecond == null) {
+        contentOffset = "offset3";
+    }
+    
+    
+    string orchardBadgeOffset = "offset6";
+    if(Model.Copyright != null) {
+        orchardBadgeOffset = "";
+    }
+
+    // The google fonts are included separately, because the one-request include currently throws an error because of the | character    
+    Style.Include("http://fonts.googleapis.com/css?family=Poiret+One");
+    Style.Include("http://fonts.googleapis.com/css?family=PT+Serif");
+    Style.Include("http://fonts.googleapis.com/css?family=Open+Sans:400,300");
+    Style.Include("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+    
+    Style.Include("bootstrap.min.css");
+    Style.Include("bootstrap-responsive.min.css");
+
+    Style.Include("socialicons.css");
+    Style.Include("theme.css");
+        
+    Script.Require("jQuery").AtFoot();
+    Script.Include("bootstrap.min.js").AtFoot();
+    Script.Include("tinynav.min.js").AtFoot();
+    Script.Include("theme.js").AtFoot();
+}
+
+<!--  
+    #######################################################################################
+
+    Some info for source code detectives:
+
+    * This website is powered by Orchard CMS (orchardproject.net)
+
+    * Theme designed and built by Shovel & Rake (shovelandrake.com)    
+
+    * Theme available for free download in the Orchard gallery (gallery.orchardproject.net)
+
+    Thanks for checking out my source :)
+
+    ####################################################################################### 
+
+--->
+
+
+<div class="container">
+    @if (Model.Header != null) {
+        <header id="layout-header" class="row">
+            <div id="header" class="span12">
+                @Zone(Model.Header)
+            </div>
+        </header>
+    }
+
+	<div class="masthead clearfix">
+        @if (Model.Logo != null) {
+            @Zone(Model.Logo)
+        }
+        else {
+         <a href="/"> <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/img/wwlogo.png"))" alt="Wise Words"> </a>   
+        }
+            
+        @Display(Model.Navigation)
+	</div>
+
+	<hr>
+	
+    @if (Model.BeforeMain != null) {
+        <div class="row">
+            <div class="span12">
+                @Display(Model.BeforeMain)
+            </div>
+        </div>        
+    }
+
+    @if (Model.Featured != null) {
+        <div class="row">
+            <div class="span12">
+                @Display(Model.Featured)
+            </div>
+        </div>        
+    }
+
+	<div class="row main-content-row">
+        @if (Model.AsideFirst != null) {
+            <aside id="aside-first" class="@asideOffset span3">
+                @Zone(Model.AsideFirst)
+            </aside>
+        }
+        
+        <div class="@contentOffset span6">
+
+            @if (Model.Messages != null) {
+                @Display(Model.Messages)
+            }
+
+            @if (Model.BeforeContent != null) {
+                @Display(Model.BeforeContent)
+            }
+
+            @Display(Model.Content)
+
+            @if (Model.AfterContent != null) {
+                @Display(Model.AfterContent)
+            }
+
+		    <div class="clearfix"></div>
+	    </div>
+
+       @if (Model.AsideSecond != null) {
+             <aside id="aside-second" class="@asideOffset span3">
+                 @Zone(Model.AsideSecond)
+            </aside>
+       }
+	</div>
+
+    @if (Model.AfterMain != null) {
+        <div class="row">
+            <div class="span12">
+                @Display(Model.AfterMain)
+            </div>
+        </div>  
+    }
+
+
+    @if (Model.TripelFirst != null || Model.TripelSecond != null || Model.TripelThird != null) {
+        
+      <hr>
+      <div class="row tripel-row">
+        @if (Model.TripelFirst != null) {
+          <div id="tripel-first" class="span4 tripel">
+            @Zone(Model.TripelFirst)
+          </div>
+        }
+        @if (Model.TripelSecond != null) {
+          <div id="tripel-second" class="span4 tripel">
+            @Zone(Model.TripelSecond)
+          </div>
+        }
+        @if (Model.TripelThird != null) {
+          <div id="tripel-third" class="span4 tripel">                      
+            @Zone(Model.TripelThird)
+          </div>
+        }
+      </div>
+    }
+
+    @if (Model.FooterQuadFirst != null || Model.FooterQuadSecond != null || Model.FooterQuadThird != null || Model.FooterQuadFourth != null) {
+      <hr>
+
+      <div class="row quad-row">
+        @if (Model.FooterQuadFirst != null) {
+          <div id="quad-first" class="span3 quad">
+            @Zone(Model.FooterQuadFirst)
+          </div>
+        }
+        @if (Model.FooterQuadSecond != null) {
+          <div id="quad-second" class="span3 quad">
+            @Zone(Model.FooterQuadSecond)
+          </div>
+        }
+        @if (Model.FooterQuadThird != null) {
+          <div id="quad-third" class="span3 quad">
+            @Zone(Model.FooterQuadThird)
+          </div>
+        }
+        @if (Model.FooterQuadFourth != null) {
+          <div id="quad-fourth" class="span3 quad">
+            @Zone(Model.FooterQuadFourth)
+          </div>
+        }
+      </div>
+    }
+
+    @if(Model.Footer != null) {
+        <hr>
+        <div class="row">
+            <div class="span12">
+                @Zone(Model.Footer)
+            </div>
+        </div>
+    }
+
+	<hr>
+
+    <div class="row">
+        @if(Model.Copyright != null) {
+            <div class="copyright span6">
+                @Zone(Model.Copyright)
+            </div>
+            }
+
+        @* You may remove this badge if you like. In case you don't: Thanks for helping Orchard become more popular *@
+        <div class="poweredBy span6 @orchardBadgeOffset">
+            <a href="http://orchardproject.net" target="_blank"> <img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/Content/img/poweredByOrchard.png"))" alt="Wise Words"> </a>
+        </div>
+    </div>
+</div>  <!-- End Container -->
