@@ -22,6 +22,12 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Trifect-CMS", "http://local
 		SlnRelativePath = "..\Trifect-CMS\"
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC8E277D-33EF-4192-AC93-1B6A27A58E93}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Jerel\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\vtmduzg5.fzn\schemas\WE-Palette.css = C:\Users\Jerel\AppData\Local\Microsoft\VisualStudio\11.0\Extensions\vtmduzg5.fzn\schemas\WE-Palette.css
+		WE-settings.xml = WE-settings.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

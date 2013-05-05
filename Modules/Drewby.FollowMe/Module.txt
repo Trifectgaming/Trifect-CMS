@@ -1,0 +1,12 @@
+Name: FollowMe
+AntiForgery: enabled
+Author: Drew Robbins
+Website: http://drewby.com
+Version: 1.0
+OrchardVersion: 1.0
+Description: Allows you to add popular social sites for users to easily follow you.
+Features:
+    Drewby.FollowMe:
+        Description: Allows you to add popular social sites for users to easily follow you.
+        Category: Social
+        Dependencies: Orchard.jQuery

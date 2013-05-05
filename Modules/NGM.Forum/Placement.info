@@ -1,0 +1,63 @@
+﻿<Placement>
+  <Match DisplayType="Summary">
+    <Place Parts_Common_Body_Summary="-"/>
+  </Match>
+  
+  <Match ContentType="Forum">
+    <Place Parts_Status_Close_Forum_Edit="Content:2"/>
+    <Place Parts_Setting_Popularity_Forum_Edit="Content:2"/>
+    
+    <Match DisplayType="Detail">
+      <Place
+            Parts_Forums_Forum_Status="Meta:1"
+            Parts_Forums_Thread_List="Content"
+            Parts_Common_Body="-"
+            Parts_Common_Metadata="-"
+            Parts_Forums_Forum_Manage="Meta:2"/>
+    </Match>
+    <Match DisplayType="Summary">
+      <Place
+            Parts_Common_Metadata_Summary="-"
+            Parts_Forums_Forum_Status="Meta:2"
+            Parts_Forums_Forum_ThreadCount="Content:before.1"
+            Parts_Forums_Forum_PostCount="Content:before.2"
+            Parts_Forums_Forum_LatestPost="Content:after.1"/>
+    </Match>
+  </Match>
+
+  <Match ContentType="Thread">
+    <Place Parts_Common_Owner_Edit="-"/>
+    <Place Parts_Routable_Edit="-"/>
+    <Place Parts_Routable_Thread_Edit="Content:before.5"/>
+    <Place Parts_Status_Close_Thread_Edit="Content:after.5"/>
+    <Place Parts_Status_Sticky_Thread_Edit="Content:after.6"/>
+    <Place Parts_Type_Thread_Edit="Content:after.5"/>
+    
+    <Place Parts_Threads_Post_List="Content"/>
+
+    <Match DisplayType="Detail">
+      <Place Parts_Common_Metadata="-"/>
+    </Match>
+    <Match DisplayType="Summary">
+      <Place
+            Parts_Common_Metadata_Summary="-"
+            Parts_Threads_Thread_PostCount="Content:before.1"
+            Parts_Threads_Thread_Status="Meta:2"
+            Parts_Threads_Thread_LatestPost="Content:after.1"/>
+    </Match>
+    <Match DisplayType="SummaryAdmin">
+      <Place Parts_Threads_Move_SummaryAdmin="Actions:1"/>
+    </Match>
+  </Match>
+
+  <Match ContentType="Post">
+    <Place Parts_Common_Owner_Edit="-"/>
+    
+    <Match DisplayType="Detail">
+      <Place
+            Parts_Posts_Post_Metadata="Meta:1"
+            Parts_Posts_Post_Title="-"
+            Parts_Posts_Post_Manage="Content:after.1"/>
+    </Match>
+  </Match>
+</Placement>

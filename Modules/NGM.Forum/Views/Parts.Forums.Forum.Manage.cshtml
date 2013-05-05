@@ -1,0 +1,13 @@
+﻿@using NGM.Forum.Extensions
+@using NGM.Forum.Models
+@{
+    var forumPart = (ForumPart)Model.ContentPart;
+}
+
+<div class="item-properties actions">
+  <p>
+    @if (!forumPart.IsClosed) {
+        <a href="@Url.CreateThread(forumPart)" class="create">@T("Create Post")</a>
+    }
+  </p>
+</div>

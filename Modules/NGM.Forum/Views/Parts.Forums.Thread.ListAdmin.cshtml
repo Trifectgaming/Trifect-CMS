@@ -1,0 +1,9 @@
+﻿@using Orchard.Core.Contents.ViewModels;
+@using Orchard.Utility.Extensions;
+@if (Model.ContentItems.Items.Count > 0) {
+    <fieldset class="contentItems bulk-items">
+        @Display(Model.ContentItems)
+    </fieldset>
+} else {
+    <div class="info message">@T("There are no threads for this forum.")</div>
+}
