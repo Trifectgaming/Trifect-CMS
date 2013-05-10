@@ -1,0 +1,18 @@
+2013-05-10 00:12:29,904 [10] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-10 00:12:30,295 [10] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-10 00:12:30,378 [10] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchar

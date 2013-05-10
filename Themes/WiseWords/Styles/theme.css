@@ -33,7 +33,6 @@
 /***** 1. Content *****/
 
 a {
-    color: #9b7188;
     text-decoration: underline;
 }
 
@@ -43,7 +42,6 @@ a:hover, a:focus {
 }
 
 body{
-	background-color:#eeeee6;
 	font-family: 'PT Serif', serif;
 	font-size:18px;
 	line-height: 30px;
@@ -54,7 +52,6 @@ body, legend {
 }
 
 h1 {
-	color:#9b7188;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 34px;
 	font-weight: 300;

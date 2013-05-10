@@ -1,0 +1,626 @@
+2013-05-09 22:59:13,275 [41] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - WebException thrown from IContentPartDriver by LatestTwitter.Drivers.TwitterWidgetDriver
+System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at LatestTwitter.Services.CachedTweetRetrievalService.RetrieveTweetsFromTwitterFor(TwitterWidgetPart part) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 57
+   at LatestTwitter.Services.CachedTweetRetrievalService.<>c__DisplayClass1.<GetTweetsFor>b__0(AcquireContext`1 ctx) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 38
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at LatestTwitter.Services.CachedTweetRetrievalService.GetTweetsFor(TwitterWidgetPart part) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 35
+   at LatestTwitter.Drivers.TwitterWidgetDriver.<>c__DisplayClass3.<Display>b__2() in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Drivers\TwitterWidgetDriver.cs:line 24
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassf.<ContentShape>b__e(BuildShapeContext ctx) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 130
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass15.<ContentShapeImplementation>b__14(BuildShapeContext ctx) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 139
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 39
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassa.<BuildDisplay>b__9(IContentPartDriver driver) in c:\Orchard\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 49
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 22:59:26,342 [74] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - WebException thrown from IContentPartDriver by LatestTwitter.Drivers.TwitterWidgetDriver
+System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at LatestTwitter.Services.CachedTweetRetrievalService.RetrieveTweetsFromTwitterFor(TwitterWidgetPart part) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 57
+   at LatestTwitter.Services.CachedTweetRetrievalService.<>c__DisplayClass1.<GetTweetsFor>b__0(AcquireContext`1 ctx) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 38
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at LatestTwitter.Services.CachedTweetRetrievalService.GetTweetsFor(TwitterWidgetPart part) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 35
+   at LatestTwitter.Drivers.TwitterWidgetDriver.<>c__DisplayClass3.<Display>b__2() in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Drivers\TwitterWidgetDriver.cs:line 24
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassf.<ContentShape>b__e(BuildShapeContext ctx) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 130
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass15.<ContentShapeImplementation>b__14(BuildShapeContext ctx) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 139
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 39
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassa.<BuildDisplay>b__9(IContentPartDriver driver) in c:\Orchard\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 49
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 22:59:37,626 [38] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - WebException thrown from IContentPartDriver by LatestTwitter.Drivers.TwitterWidgetDriver
+System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at LatestTwitter.Services.CachedTweetRetrievalService.RetrieveTweetsFromTwitterFor(TwitterWidgetPart part) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 57
+   at LatestTwitter.Services.CachedTweetRetrievalService.<>c__DisplayClass1.<GetTweetsFor>b__0(AcquireContext`1 ctx) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 38
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at LatestTwitter.Services.CachedTweetRetrievalService.GetTweetsFor(TwitterWidgetPart part) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 35
+   at LatestTwitter.Drivers.TwitterWidgetDriver.<>c__DisplayClass3.<Display>b__2() in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Drivers\TwitterWidgetDriver.cs:line 24
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassf.<ContentShape>b__e(BuildShapeContext ctx) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 130
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass15.<ContentShapeImplementation>b__14(BuildShapeContext ctx) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 139
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 39
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassa.<BuildDisplay>b__9(IContentPartDriver driver) in c:\Orchard\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 49
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 22:59:57,999 [62] Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator - WebException thrown from IContentPartDriver by LatestTwitter.Drivers.TwitterWidgetDriver
+System.Net.WebException: The remote server returned an error: (404) Not Found.
+   at System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest& request)
+   at System.Net.WebClient.DownloadString(Uri address)
+   at System.Net.WebClient.DownloadString(String address)
+   at LatestTwitter.Services.CachedTweetRetrievalService.RetrieveTweetsFromTwitterFor(TwitterWidgetPart part) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 57
+   at LatestTwitter.Services.CachedTweetRetrievalService.<>c__DisplayClass1.<GetTweetsFor>b__0(AcquireContext`1 ctx) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 38
+   at Orchard.Caching.Cache`2.CreateEntry(TKey k, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 57
+   at Orchard.Caching.Cache`2.<>c__DisplayClass2.<Get>b__0(TKey k) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 19
+   at System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(TKey key, Func`2 addValueFactory, Func`3 updateValueFactory)
+   at Orchard.Caching.Cache`2.Get(TKey key, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\Cache.cs:line 17
+   at Orchard.Caching.DefaultCacheManager.Get[TKey,TResult](TKey key, Func`2 acquire) in c:\Orchard\src\Orchard\Caching\DefaultCacheManager.cs:line 33
+   at LatestTwitter.Services.CachedTweetRetrievalService.GetTweetsFor(TwitterWidgetPart part) in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Services\CachedTweetRetrievalService.cs:line 35
+   at LatestTwitter.Drivers.TwitterWidgetDriver.<>c__DisplayClass3.<Display>b__2() in d:\MyDocs\GitHub\Trifect-CMS\Modules\LatestTwitter\Drivers\TwitterWidgetDriver.cs:line 24
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClassf.<ContentShape>b__e(BuildShapeContext ctx) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 130
+   at Orchard.ContentManagement.Drivers.ContentPartDriver`1.<>c__DisplayClass15.<ContentShapeImplementation>b__14(BuildShapeContext ctx) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentPartDriver.cs:line 139
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.ApplyImplementation(BuildShapeContext context, String displayType) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 39
+   at Orchard.ContentManagement.Drivers.ContentShapeResult.Apply(BuildDisplayContext context) in c:\Orchard\src\Orchard\ContentManagement\Drivers\ContentShapeResult.cs:line 21
+   at Orchard.ContentManagement.Drivers.Coordinators.ContentPartDriverCoordinator.<>c__DisplayClassa.<BuildDisplay>b__9(IContentPartDriver driver) in c:\Orchard\src\Orchard\ContentManagement\Drivers\Coordinators\ContentPartDriverCoordinator.cs:line 49
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:10:57,030 [55] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:10:57,375 [55] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:10:57,446 [55] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Themes.Models.ThemeEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:24:31,673 [41] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:31,709 [41] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:31,786 [41] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:31,788 [41] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:35,940 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:35,942 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:36,019 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:36,021 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:36,103 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:36,105 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:36,186 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:36,188 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:36,260 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:36,262 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:36,332 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:36,334 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:36,443 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:36,445 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:36,524 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:36,526 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:36,647 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:36,649 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:36,742 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:36,745 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:24:36,834 [22] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:24:36,836 [22] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:25:00,024 [32] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:25:00,026 [32] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:25:00,095 [32] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:25:00,097 [32] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:25:00,176 [32] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:25:00,179 [32] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:25:00,277 [32] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:25:00,280 [32] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:25:00,354 [32] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:25:00,357 [32] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:25:00,454 [32] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:25:00,457 [32] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:25:00,540 [32] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:25:00,542 [32] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:25:00,628 [32] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:25:00,630 [32] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:25:00,706 [32] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:25:00,708 [32] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:25:00,800 [32] Orchard.Environment.DefaultAssemblyLoader - Error loading assembly 'Contrib.Taxonomies'
+System.IO.FileNotFoundException: Could not load file or assembly 'Contrib.Taxonomies' or one of its dependencies. The system cannot find the file specified.
+File name: 'Contrib.Taxonomies'
+   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at Orchard.Environment.DefaultAssemblyLoader.LoadWorker(String shortName, String fullName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 56
+   at Orchard.Environment.DefaultAssemblyLoader.<>c__DisplayClass4.<Load>b__2(String shortName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Orchard.Environment.DefaultAssemblyLoader.Load(String assemblyName) in c:\Orchard\src\Orchard\Environment\IAssemblyLoader.cs:line 26
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-05-09 23:25:00,802 [32] Orchard.Environment.Extensions.Compilers.DefaultExtensionCompiler - Assembly reference 'Contrib.Taxonomies' for project '/Modules/NGM.Forum/NGM.Forum.csproj' cannot be loaded
+2013-05-09 23:29:02,898 [85] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:29:03,342 [85] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:29:03,345 [85] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:29:03,349 [85] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:29:03,352 [85] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:29:03,356 [85] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:29:03,359 [85] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:29:03,362 [85] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:29:03,365 [85] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
+2013-05-09 23:29:03,368 [85] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - RuntimeBinderException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.6.1.0, Culture=neutral, PublicKeyToken=null]]
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'Orchard.Modules.Models.ModuleEntry' to 'Orchard.ContentManagement.ContentPart'
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at CallSite.Target(Closure , CallSite , Object )
+   at Orchard.DesignerTools.Services.WidgetAlternatesFactory.<Displaying>b__5(ShapeDisplayingContext displayedContext) in d:\MyDocs\GitHub\Trifect-CMS\Modules\Orchard.DesignerTools\Services\WidgetAlternatesFactory.cs:line 18
+   at Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) in c:\Orchard\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:line 78
+   at Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) in c:\Orchard\src\Orchard\InvokeExtensions.cs:line 17
