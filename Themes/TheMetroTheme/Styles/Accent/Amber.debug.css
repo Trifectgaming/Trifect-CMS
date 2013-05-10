@@ -1,0 +1,105 @@
+﻿/*
+Role: Accent
+Accent Color: #F20D00 - Amber
+Author: Marco Siniscalco
+Copyright: 2012, Marco Siniscalco. All Rights Reserved
+Project Site: http://orchardmetrotheme.codeplex.com/
+***************************************************************/
+
+/* 
+    GENERAL
+***************************************************************/
+a { color: #F20D00; }
+    a.btn {
+        padding:8px 10px 8px 10px;
+        background:#F20D00; 
+        color:#fff; 
+    }
+    a.btn:hover {
+        padding:8px 10px 8px 10px;
+        background:#BC0B0E; 
+        color:#fff; 
+    }
+
+/* 
+    FORMS
+***************************************************************/
+input[type="submit"],
+input[type="button"] { 
+    background:#F20D00; 
+    color:#fff; 
+}
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background:#BC0B0E;
+    color:#fff;
+}
+
+.primaryAction { 
+    padding:8px 10px 8px 10px;
+    background:#F20D00; 
+    color:#fff; 
+    border:1px solid #F20D00;
+    cursor: pointer;
+}
+.primaryAction:hover { 
+    padding:8px 10px 8px 10px;
+    background:#BC0B0E; 
+    color:#fff; 
+    border:1px solid #BC0B0E;
+}
+
+/* 
+    LAYOUTS
+***************************************************************/
+#layout-navigation nav ul li:hover,
+#layout-navigation nav ul li.current {
+    background: #F20D00;
+
+}
+    #layout-navigation nav ul li:hover a,
+    #layout-navigation nav ul li.current a {
+        color: #fff;
+    }
+
+/* 
+    TAGS
+***************************************************************/
+.tags a { background:#F20D00; color:#fff; }
+.tags a:hover { background:#BC0B0E; }
+
+/* 
+    PAGER
+***************************************************************/
+.pager a  { background:#F20D00; color:#fff;  }
+.pager a:hover { background:#BC0B0E; }
+
+/* 
+    UTILITY
+***************************************************************/
+.highlighted { background:#F20D00; color:#fff; font-family:Menlo,Monaco,Consolas,"Courier New",monospace; padding: 1px; }
+
+.well { }
+
+.hero-unit {
+    background-color: #F20D00; 
+    color: #fff;
+}
+.hero-unit a { 
+    background: #BC0B0E; 
+    color:#fff;
+    padding: 0 5px 0 5px;
+    font-weight: bold; 
+}
+.hero-unit a:hover { 
+    color: #BC0B0E; 
+    background: #fff; 
+}
+.hero-unit a.btn,
+.hero-unit a.btn:hover { 
+    color: #fff;
+    background:url('Amber/little-right-metro-arrow-white.png') right 8px Transparent no-repeat; 
+    padding: 0 25px 0 0; 
+    font-size: 22px; 
+    font-weight: bold; 
+}

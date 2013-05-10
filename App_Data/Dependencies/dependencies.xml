@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies>
   <Dependency>
+    <ModuleName>Bootstrap</ModuleName>
+    <VirtualPath>~/Themes/Bootstrap/Bootstrap.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>Orchard.Themes</ModuleName>
     <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -535,10 +541,16 @@
     <References />
   </Dependency>
   <Dependency>
-    <ModuleName>TheThemeMachine</ModuleName>
-    <VirtualPath>~/Theme/TheThemeMachine</VirtualPath>
-    <LoaderName>RawThemeExtensionLoader</LoaderName>
-    <References />
+    <ModuleName>TheMetroTheme</ModuleName>
+    <VirtualPath>~/Themes/TheMetroTheme/TheMetroTheme.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Themes</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
+      </Reference>
+    </References>
   </Dependency>
   <Dependency>
     <ModuleName>TinyMce</ModuleName>

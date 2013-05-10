@@ -1,16 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies>
   <Dependency>
+    <ExtensionId>Bootstrap</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/Bootstrap/Bootstrap.csproj</VirtualPath>
+    <Hash>48ef0b6f6301c358</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>CKEditor</ExtensionId>
     <LoaderName>DynamicExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/CKEditor/CKEditor.csproj</VirtualPath>
-    <Hash>cf7ac0241eaa5415</Hash>
+    <Hash>cf7ad60f288fa879</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Contrib.Taxonomies</ExtensionId>
     <LoaderName>DynamicExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Contrib.Taxonomies/Contrib.Taxonomies.csproj</VirtualPath>
-    <Hash>6b1940a20b764e90</Hash>
+    <Hash>6b19426748ef682e</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Contrib.Voting</ExtensionId>
@@ -269,6 +275,12 @@
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/SysCache/bin/SysCache.dll</VirtualPath>
     <Hash>926205801555fc52</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>TheMetroTheme</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/TheMetroTheme/TheMetroTheme.csproj</VirtualPath>
+    <Hash>cf8c0651bbd30c05</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>TinyMce</ExtensionId>
