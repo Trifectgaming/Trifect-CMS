@@ -1,0 +1,14 @@
+﻿.followme
+{
+    list-style: none;
+    margin: 0px;  
+    margin-top: 1em;  
+}
+.followme li
+{
+    display: inline;
+}
+.followme img
+{
+    padding: 2px;
+}

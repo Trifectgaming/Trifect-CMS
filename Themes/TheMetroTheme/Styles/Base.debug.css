@@ -101,7 +101,9 @@ img {
     li ol       { margin:0 24px; }
     ul, ol      { margin: 24px; line-height: 24px; }
 
-    ul          { list-style-type: square; }
+    ul {
+         list-style-type: square;  
+    }
     ol          { list-style-type: decimal; }
 
     dl          { margin: 0 0 24px 0; }
@@ -346,6 +348,7 @@ img {
 
 .latest-twitter-list {
     margin-top: 0;
+    list-style-image: url('/Media/Default/Content/RedTriangle.png');
 }
 
 /* 
