@@ -1,0 +1,10 @@
+﻿Name: Orchard.PopForumsAdapter
+AntiForgery: enabled
+Author: The Orchard Team
+Website: http://orchardproject.net
+Version: 0.0.1
+OrchardVersion: 1.6
+Description: Adapter for using Popforums with Orchard
+Features:
+    Orchard.PopForumsAdapter:
+        Description: Adapter for using Popforums with Orchard

@@ -222,10 +222,11 @@ img {
 
 #layout-header-container {
     float: left;
+    width: 665px;
 }
 
 #layout-navigation-container {
-    float: right;
+    float: left;
 }
     #layout-navigation .widget { margin: 0; }
 
@@ -357,7 +358,7 @@ img {
 #comments { margin: 24px 0 0 0; padding: 0; }
 .comment-form { margin: 24px 0 0 0; padding: 0; }
     .comment-form .who ol,
-    .comment-form .what ol { padding:0; margin:0; } { padding:0; margin:0; }
+    .comment-form .what ol { padding:0; margin:0; }
     .comment-form .who ol li,
     .comment-form .what ol li { list-style:none; list-style-type:none; }
     .comment-form .what ol li button.primaryAction { margin-top:20px; line-height: 1; }
