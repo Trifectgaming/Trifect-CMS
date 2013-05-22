@@ -351,6 +351,12 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>Orchard.PopForumsAdapter</ModuleName>
+    <VirtualPath>~/Modules/Orchard.PopForumsAdapter/Orchard.PopForumsAdapter.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>Orchard.Projections</ModuleName>
     <VirtualPath>~/Modules/Orchard.Projections/bin/Orchard.Projections.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
