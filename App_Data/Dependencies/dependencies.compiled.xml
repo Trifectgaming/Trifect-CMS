@@ -181,6 +181,12 @@
     <Hash>48f910362b472f26</Hash>
   </Dependency>
   <Dependency>
+    <ExtensionId>Orchard.PopForumsAdapter</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Orchard.PopForumsAdapter/Orchard.PopForumsAdapter.csproj</VirtualPath>
+    <Hash>dabf19ea0aff9de9</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>Orchard.Projections</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Orchard.Projections/bin/Orchard.Projections.dll</VirtualPath>
