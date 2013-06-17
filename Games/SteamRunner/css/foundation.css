@@ -1,3 +1,9 @@
+﻿@font-face
+{
+    font-family: "Steampunk";
+    src: url("../Fonts/Steampunk_Font_by_hannarb.ttf") format("truetype");
+}
+
 *,
 *:before,
 *:after {
@@ -11,15 +17,15 @@ body {
 
 body
 {
-    background: url(http://fc06.deviantart.net/fs71/f/2010/097/d/7/steampunk_sketches_city_by_picksel.jpg);
-    -moz-background-size: cover;
+    background: url(../img/parchment.png) no-repeat center fixed;
+    /*-moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
     color: #222222;
     padding: 0;
     margin: 0;
-    font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+    font-family: Steampunk, Constantina, Georgia, 'Nimbus Roman No9 L', serif;
     font-weight: normal;
     font-style: normal;
     line-height: 1;
@@ -27,15 +33,50 @@ body
     cursor: default;
 }
 
-header{
-    background: #26200C;
+#container {
+    background: url(../img/steampunk_sketches_city_by_picksel.png) center bottom content-box repeat-x fixed;
+}
+
+header {
+    background: rgba(170, 152, 140,1);
     color: #F2F2F2;
 }
 
-.transparent {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=95)"; /* for IE8 in IE7 mode */
-    filter: alpha(opacity=95); /* for IE6-IE8 */
-    opacity: .95;
+.city {
+    
+}
+
+#glass-section {
+    height: 270px;
+}
+
+.glass{
+    text-align: center;
+    background: rgba(65, 36, 36, 0.35);
+    color: white;
+    width: 400px;
+    height: 120px;
+    vertical-align:middle;
+    position:absolute;
+	left:50%;
+	top:50%;
+    margin-top:-85px;
+    margin-left: -200px;
+}
+
+.glass p
+{
+    margin-top: 50px;
+}
+
+.book-end {
+    background-color: rgba(136, 105, 82, .85);
+    color: #F2F2F2;
+    height: 45px;
+    line-height: 45px;
+}
+    .book-end a{
+    color: #F2F2F2;
 }
 
 header h1 {
@@ -43,17 +84,27 @@ header h1 {
 }
 
 #media-section {
-    background-color: #F2F2F2;
+    background: rgba(178, 166, 155, .85);
+    color: #F2F2F2;
+}
+
+#media-section h2 {
+    color: #F2F2F2;
 }
 
 #lore-section {
-    background: #210000;
+    background: rgba(131, 108, 90, 1);
     color: #F2F2F2;
 }
 
 #lore-section h2 {
     color: #F2F2F2;
 }
+
+#lore-section p {
+    color: #F2F2F2;
+}
+
 
 a:hover {
   cursor: pointer; }
@@ -106,15 +157,7 @@ img {
 .antialiased {
   -webkit-font-smoothing: antialiased; }
 
-.book-end {
-    background-color: #557365;
-    color: #F2F2F2;
-    height: 45px;
-    line-height: 45px;
-}
-    .book-end a{
-    color: #F2F2F2;
-}
+
 
 img {
   display: inline-block;
@@ -1104,11 +1147,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #2ba6cb;
+  color: #F2F2F2;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #2795b6; }
+    color: #557365; }
   a img {
     border: none; }
 
